@@ -78,7 +78,8 @@ public class Controller {
 			User user= new User(userName,userPassWord1);
 			userService.saveUser(user);
 			System.out.println(user);
-			mv.setViewName("courses");
+			mv.setViewName("login");
+			mv.addObject("message", "Registration Successful!!!.  Login Here With Your User Id and PassWord");
 				return mv;
 
 		}
